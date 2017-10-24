@@ -1,0 +1,32 @@
+body {
+    font-size:100%
+}
+
+h1{
+    font-size:6.2em;font-weight:500;
+}
+#icon {
+    width: 140px;
+    height: 140px;
+}
+#imgx {
+    width: 20px;
+    height: 28px;
+    margin-bottom: 1px;
+    margin-top:1px;
+    margin-right: 8px;
+    margin-left: 20px;
+}
+#imgc {
+    width: 28px;
+    height: 25px;
+    margin-bottom: 1px;
+    margin-top:1px;
+    margin-right: 2px;
+    margin-left: 4px;
+}
+#icon2 {
+    width: 40px;
+    height: 40px;
+}
+

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="images" href="images/sa.png">
+    <title> Rainy Room</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" typ="text/css " href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/style1.css" />
+    <script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+
+
+</head>
+<style>
+    div.transbox {
+        margin: 0px;
+        width: 350px;
+        height: 950px;
+        background-color: #222222;
+        opacity: 0.8;
+        filter: alpha(opacity=20);
+    }
+
+    div.transbox2 {
+        margin: 0px;
+        width: 500px;
+        height: 940px;
+        background-color: #2c2c2c;
+        opacity: 0.92;
+        filter: alpha(opacity=5);
+    }
+
+    .navbar-brand,
+    .navbar-nav li a {
+        line-height: 60px;
+        height: 80px;
+        padding-top: 2px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+</style>
+
+
+<body id="page">
+    <ul class="cb-slideshow">
+        <li>
+            <span>Image 01</span>
+        </li>
+        <li>
+            <span>Image 02</span>
+        </li>
+        <li>
+            <span>Image 03</span>
+        </li>
+        <li>
+            <span>Image 04</span>
+        </li>
+        <li>
+            <span>Image 05</span>
+        </li>
+        <li>
+            <span>Image 06</span>
+        </li>
+    </ul>
+</body>
+
+<body>
+    <center>
+        <div class="container">
+            <nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+                <ul class="nav navbar-nav ">
+                    <li class="active">
+                        <a href="index.html">
+                            <img id="icon2" src="images/011.png" alt="">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="index.html">Back to Login</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <br>
+        <br>
+        <center>
+            <div class="transbox2">
+                <div class="container">
+
+                    <br>
+                    <br>
+                    <center>
+
+                        <h1>
+                            <img id="icon" src="images/011.png" alt="">
+                            <br>
+                            <br>
+
+                            <br>
+                            <div class="wrapper">
+
+                                <form name="registerform" id="signupForm" class="form-signin" action="" method="POST" role="form">
+                                    <center>
+
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="username" name="username" placeholder="Username" maxlength="12" autofocus/ onKeyup="validate()">
+                                            <div id="errUser"></div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="fname" name="fname" placeholder="First Name " onKeyup="validate()">
+                                            <div id="errFirst"></div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="lname" name="lname" placeholder="Last Name" onKeyup="validate()">
+                                            <div id="errLast"></div>
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="email" name="username" placeholder="E-mail" onKeyup="validate()">
+                                            <div id="errEmail"></div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" id="password" name="password" placeholder="Password" maxlength="30" autofocus/
+                                                onKeyup="validate()">
+                                            <div id="errPass"></div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" id="con_password" name="con_password" placeholder="Confirm Password" maxlength="30"
+                                                onKeyup="validate()">
+                                            <div id="errConform"></div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="tel" name="tel" maxlength="10" placeholder="Tel">
+                                        </div>
+
+                                        <br>
+                                        <li>
+                                            <a class="waves-effect waves-light btn btn grey darken-3 pulse" onclick="validate()">
+                                                <input type="button" value="register" id="create" onclick="validate(); finalValidate();">
+                                            </a>
+                                            <div id="errFinal"></div>
+                                        </li>
+                                    </center>
+                                </form>
+                            </div>
+
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                    </center>
+        </center>
+    </center>
+    </div>
+    </div>
+
+    <script type="text/javascript" src="js/singup.js"></script>
+
+    <script type="text/javascript">
+        function create() {
+            $.cookie('keep', 'user data');
+            console.log($.cookie('keep'));
+        }
+    </script>
+
+
+
+</body>
+
+</html>

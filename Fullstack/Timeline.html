@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="images" href="images/sa.png">
+    <title> Rainy Room </title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" typ="text/css " href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/style1.css" />
+    <script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+    <!--mustache-->
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.js"></script>
+
+
+
+
+
+
+</head>
+<style>
+    div.Postform {
+        width: 500px;
+        height: 500px;
+
+    }
+
+    div.transbox {
+        margin: 0px;
+        width: 1000px;
+        height: 0px;
+        background-color: #222222;
+        opacity: 0.98;
+        filter: alpha(opacity=20);
+    }
+
+    div.transbox2 {
+        margin: 0px;
+        width: 1000px;
+        height: 800px;
+        background-color: #222222;
+        opacity: 0.92;
+        filter: alpha(opacity=5);
+    }
+
+    div.transbox3 {
+        margin: 0px;
+        width: 1000px;
+        height: 700px;
+        background-color: #222222;
+        opacity: 0.92;
+        filter: alpha(opacity=5);
+    }
+
+    .navbar-brand,
+    .navbar-nav li a {
+        line-height: 60px;
+        height: 80px;
+        padding-top: 2px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .alert {
+
+        padding: 2px;
+        background-color: #000000;
+        color: rgb(255, 255, 255);
+        opacity: 0.8;
+        transition: opacity 0.6s;
+        margin-bottom: 15px;
+
+    }
+
+    .alert.success {
+        background-color: rgb(35, 60, 83);
+    }
+
+
+    .closebtn {
+        margin-left: 50px;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        float: right;
+        font-size: 25px;
+        line-height: 15px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .closebtn:hover {
+        color: rgb(54, 54, 54);
+    }
+
+    textarea {
+        color: rgb(0, 0, 0);
+    }
+
+    div.cover {
+        border: 0px solid rgb(255, 255, 255);
+        width: 1000px;
+        padding-top: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        background-color: #303030;
+        word-wrap: break-word;
+        opacity: 0.95;
+        filter: alpha(opacity=5);
+    }
+
+    div.cover2 {
+        border: 0px solid black;
+        width: 600px;
+        height: 55px;
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        background-color: #000000;
+        word-wrap: break-word;
+        opacity: 0.95;
+        filter: alpha(opacity=5);
+    }
+
+    .uploady {
+        width: 280px;
+        padding: 0px;
+    }
+
+    .uploady2 {
+        width: 150px;
+        padding: 0px;
+    }
+    h1,h2,h3,h4{
+    font-family: 'Droid Sans', sans-serif; font-size: 1em;
+}
+
+
+
+ 
+</style>
+
+
+<body id="page">
+    <ul class="cb-slideshow">
+        <li>
+            <span>Image 01</span>
+        </li>
+        <li>
+            <span>Image 02</span>
+        </li>
+        <li>
+            <span>Image 03</span>
+        </li>
+        <li>
+            <span>Image 04</span>
+        </li>
+        <li>
+            <span>Image 05</span>
+        </li>
+        <li>
+            <span>Image 06</span>
+        </li>
+    </ul>
+</body>
+
+<body>
+
+    <center>
+        <div class="container">
+            <nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+                <ul class="nav navbar-nav ">
+                    <li class="active">
+                        <a href="Timeline.html">
+                            <img id="icon2" src="images/011.png" alt="">
+                        </a>
+                    </li>
+
+                    <li>
+
+                        <a href="Account.html">
+                            <i class="large material-icons">person</i>
+                        </a>
+                    </li>
+
+                
+                
+                     <li><a href="index.html"><span class="glyphicon glyphicon-log-out"></span> &nbsp Logout </a></li>
+                      
+                    </ul>
+            </nav>
+        </div>
+        <br>
+        <br>
+        <br>
+        
+           
+        <div class="progress">
+                <div class="indeterminate" style="width: 100%"></div>
+            </div>
+            
+        <br>
+
+        <!--main body+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+        <div class="transbox2">
+            
+            <br>
+            <br>
+            <div class="container">
+                <center>
+                    <form method="post">
+                        <textarea name="comments" id="comma" style="width:96%;height:90px;padding:2%;font-size:1.5em;background-color:rgb(71, 71, 71);"
+                            placeholder="Say Something"></textarea>
+                </center>
+                <div style="float:left">
+                    &nbsp &nbsp
+                    <i class="small material-icons">add_a_photo</i>
+                </div>
+                <div style="float:left">
+                    <div class="uploady">
+
+                        <input type="text" placeholder="&nbsp &nbsp Photo URL" id="pic" />
+                    </div>
+                </div>
+
+                <div style="float:left">
+                    <div class="uploady2">
+                           
+                        <input type="text" placeholder="| &nbsp &nbsp Signature" id="sig" />
+                    </div>
+
+                </div>
+
+
+                </form>
+
+                <div style="float:right">
+                    <button type="submit" id="Posto" name="button" class="waves-effect waves-light btn btn grey darken-3 pulse" onClick="window.location.reload();">Post</button>&nbsp&nbsp&nbsp
+                </div>
+            <br><br><br><br>
+                <center>
+                        <br>
+                        <h1>
+                            <font color="white" size="5px">What's the Weather?</h1>
+                        <div class="container">
+                            <div class="form-group">
+                                <div class="input-field col s6">
+                                    <input multiple class="form-control" id="incity" placeholder="City name">
+                                </div>
+    
+                                <a class="waves-effect waves-light btn btn blue-grey darken-4 pulse" type="submit" id="loadw">Forecast</a>
+                    </center>
+                    <div id="wpanel"></div>
+                    </div>
+                    </div>
+                </div>
+            </center>
+            
+            
+            </div>
+        </div>
+        </div>
+        <br>
+        <br>
+
+          <center>
+            <div class='cover'>
+                <font size='5em' color='black'>
+                    <div id="Showa"></div>
+                </font>
+                
+            </div>
+        </center>
+        <script id="template1" type="x-tmpl-mustache">
+                <div id="posts{{id}}">
+                   <center>
+                <div class="row">
+                <div class="card grey darken-4">
+                <div style="float:right">
+                
+                <button class="waves-effect waves-light btn green darken-3" id="" onclick='savepost({{id}})'> <i class="large material-icons">save</i></button>
+                <button class="waves-effect waves-light btn light-blue accent-4" id="" onclick='editpost({{id}})'> <i class="large material-icons">mode_edit</i></button>
+                <button class="waves-effect waves-light btn red accent-4" id="" onclick='deletepost({{id}})'> <i class="large material-icons">cancel</i></button>
+
+               </div>
+                <br>
+                <div class="card-content white-text">
+                   
+                <input type="text"  id="comm{{id}}" value="{{comm}}" readonly></input>
+                <br>
+                <h1>Pic URL</h1>
+                <input type="text" id="pic{{id}}" value="{{pic}}" readonly></input>
+                <img src="{{pic}}" height="100%" width="100%" alt="">
+                <br><br>
+                <h3>Post by &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                     &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                     &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                       &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp </h3>
+                 <center><input type="text" id="sig{{id}}" value="{{sig}}" readonly></input></center>
+                 
+            </div>
+            </div>
+            </div>
+            </center>
+            <br>
+            </div>
+            </script>
+
+
+
+        <script type="text/javascript" src="js/Timeline.js"></script>
+
+        <script type="text/javascript">
+            function create() {
+                $.cookie('keep', 'user data');
+                console.log($.cookie('keep'));
+            }
+        </script>
+
+</body>
+
+</html>
